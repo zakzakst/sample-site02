@@ -1,5 +1,5 @@
 {
-  "name": "template02",
+  "name": "sample-site02",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,29 +10,16 @@
     "eslint": "eslint --fix src/ts/**/*.ts",
     "imagemin": "node tasks/imagemin.js"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "eslint --fix"
-    ],
-    "*.{css,scss}": [
-      "stylelint --fix"
-    ]
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zakzakst/template02.git"
+    "url": "git+https://github.com/zakzakst/sample-site02.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zakzakst/template02/issues"
+    "url": "https://github.com/zakzakst/sample-site02/issues"
   },
-  "homepage": "https://github.com/zakzakst/template02#readme",
+  "homepage": "https://github.com/zakzakst/sample-site02#readme",
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
