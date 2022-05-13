@@ -10,6 +10,19 @@
     "eslint": "eslint --fix src/ts/**/*.ts",
     "imagemin": "node tasks/imagemin.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zakzakst/sample-site02.git"
