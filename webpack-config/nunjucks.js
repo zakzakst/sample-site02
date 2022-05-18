@@ -1,9 +1,6 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const constants = require('../src/nunjucks/constants.js');
-const fileNames = [
-  'parts',
-  'parts2',
-];
+const fileNames = ['index', 'parts2'];
 
 exports.rules = [
   {
