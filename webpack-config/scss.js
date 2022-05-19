@@ -1,5 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
+const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 // const enabledSourceMap = MODE === 'development';
 const enabledSourceMap = false;
 
@@ -27,9 +27,7 @@ exports.rules = [
         loader: 'postcss-loader',
         options: {
           postcssOptions: {
-            plugins: [
-              ['autoprefixer', {grid: true}],
-            ],
+            plugins: [['autoprefixer', { grid: true }]],
           },
         },
       },
@@ -44,9 +42,7 @@ exports.rules = [
 ];
 
 exports.plugins = [
-  new FixStyleOnlyEntriesPlugin({
-    extensions: ['scss', 'css']
-  }),
+  new RemoveEmptyScriptsPlugin(),
   new MiniCssExtractPlugin({
     filename: 'css/[name]',
   }),
