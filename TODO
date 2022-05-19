@@ -1,5 +1,4 @@
 ■ 対応中
-https://stackoverflow.com/questions/65270741/webpack-5-chunkgroup-api-with-multiple-entries
 
 ■ 完了メモ
 https://ics.media/entry/17376/ （CSS画像の埋め込みのところ上手くいかなかった）
@@ -9,3 +8,4 @@ https://tsudoi.org/guide2019/detail/1.html
 https://noob-front-end-engineer-blog.com/npm-scripts-images/
 https://fwywd.com/tech/husky-setup
 https://dev.classmethod.jp/articles/pre-commit/
+https://stackoverflow.com/questions/65270741/webpack-5-chunkgroup-api-with-multiple-entries
